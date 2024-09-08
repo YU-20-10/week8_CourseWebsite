@@ -1,0 +1,54 @@
+.teacher-banner {
+  &-img {
+    background: center/cover no-repeat url("/assets/images/hero-sm-5.png");
+    height: 200px;
+  }
+  &-icon {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 1000px;
+    padding: 10px;
+    top: -40px;
+    left: calc(50% - 40px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-img {
+      background: center/cover no-repeat url("/assets/images/hero-5.png");
+      height: 400px;
+    }
+    &-icon {
+      height: 240px;
+      width: 240px;
+      padding: 20px;
+      top: -40px;
+      left: 0;
+    }
+  }
+}
+
+.teacher-course {
+  > .container {
+    padding-bottom: 120px;
+  }
+  &-deco {
+    height: 16px;
+    width: 16px;
+    background: no-repeat url(../assets/images/deco/flower-5-sm.png);
+    margin-left: 6px;
+  }
+  @include media-breakpoint-up(lg) {
+    > .container {
+      padding-bottom: 200px;
+    }
+    &-deco {
+        height: 24px;
+        width: 24px;
+        background: no-repeat url(../assets/images/deco/flower-5.png);
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+  }
+}
+

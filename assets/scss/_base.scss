@@ -1,0 +1,57 @@
+body {
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  font-weight: 700;
+
+  @media screen and (min-width: 992px) {
+    font-weight: 600;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.link-wrap {
+  pointer-events: none;
+}
+
+.social-icon {
+  &:hover {
+    background-clip: content-box;
+  }
+  &-line:hover {
+    background: #7cd31f;
+  }
+  &-yt:hover {
+    background: #ff3a55;
+  }
+  &-fb:hover {
+    background: #0068ff;
+  }
+}

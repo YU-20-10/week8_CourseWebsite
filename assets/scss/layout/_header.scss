@@ -1,0 +1,35 @@
+.header {
+  .navbar-brand {
+    background-image: url("/assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 125px;
+    height: 20px;
+    text-indent: 101%;
+    overflow: hidden;
+  }
+  .nav-link:hover {
+    color: #0068FF;
+  }
+  .dropdown-item:hover {
+    background: #0068FF;
+    color: #ECECEC;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    .container-lg {
+      box-shadow: 0 2px 40px #0068ff1a;
+    }
+    .navbar-brand {
+      background-image: url("/assets/images/logo.png");
+      width: 200px;
+      height: 32px;
+    }
+  }
+}
+
+.navbar {
+  &-search {
+    min-width: 425px;
+  }
+}

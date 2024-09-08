@@ -1,0 +1,25 @@
+.footer{
+  border-radius: 48px 48px 0 0;
+  &-logo {
+    background-image: url(/assets/images/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 32px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .nav-link>a {
+    color: #FFFFFF;
+
+    &:hover{
+      color: #0068FF;
+    }
+    
+  }
+  @include media-breakpoint-up(lg) {
+    border-radius: 80px 80px 0 0;
+  }
+}

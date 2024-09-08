@@ -1,0 +1,59 @@
+// letter-spacing
+.ls-xs-fs-1 {
+  letter-spacing: 0.96px;
+}
+.ls-xs-fs-2 {
+  letter-spacing: 0.8px;
+}
+.ls-xs-fs-3 {
+  letter-spacing: 0.64px;
+}
+.ls-xs-fs-4 {
+  letter-spacing: 0.58px;
+}
+.ls-xs-fs-5 {
+  letter-spacing: 0.48px;
+}
+.ls-xs-fs-6 {
+  letter-spacing: 0.4px;
+}
+.ls-xs-fs-7 {
+  letter-spacing: 0.32px;
+}
+.ls-xs-fs-8 {
+  letter-spacing: 0.28px;
+}
+.ls-xs-fs-9 {
+  letter-spacing: 0.24px;
+}
+
+@include media-breakpoint-up(lg) {
+  // letter-spacing
+  .ls-xs-fs-1-lg {
+    letter-spacing: 0.96px;
+  }
+  .ls-xs-fs-2-lg {
+    letter-spacing: 0.8px;
+  }
+  .ls-xs-fs-3-lg {
+    letter-spacing: 0.64px;
+  }
+  .ls-xs-fs-4-lg {
+    letter-spacing: 0.58px;
+  }
+  .ls-xs-fs-5-lg {
+    letter-spacing: 0.48px;
+  }
+  .ls-xs-fs-6-lg {
+    letter-spacing: 0.4px;
+  }
+  .ls-xs-fs-7-lg {
+    letter-spacing: 0.32px;
+  }
+  .ls-xs-fs-8-lg {
+    letter-spacing: 0.28px;
+  }
+  .ls-xs-fs-9-lg {
+    letter-spacing: 0.24px;
+  }
+}

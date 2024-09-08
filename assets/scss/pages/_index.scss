@@ -1,0 +1,238 @@
+.banner {
+  &-btn-prev,
+  &-btn-next {
+    box-shadow: 0 10px 15px -3px #0000001a;
+  }
+  .swiper {
+    &-slide {
+      height: 400px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        opacity: 0.7;
+      }
+    }
+    &-slide-active {
+      &:after {
+        opacity: 0;
+      }
+    }
+    &-pagination-bullet {
+      background: #ececec;
+      opacity: 1;
+    }
+    &-pagination-bullet-active {
+      width: 24px;
+      border-radius: 100px;
+      background: #0068ff;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-content {
+      border-radius: 80px;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 720px;
+        width: 720px;
+        background: url(/assets/images/deco/flower-4.png);
+        top: -300px;
+        left: -240px;
+        overflow: hidden;
+      }
+    }
+    &-link {
+      border-radius: 0 100px 0 80px;
+    }
+    &-btn-prev {
+      left: 7%;
+    }
+    &-btn-next {
+      right: 7%;
+    }
+    .swiper {
+      &-slide {
+        height: 800px;
+        overflow: hidden;
+        border-radius: 80px;
+      }
+    }
+  }
+}
+
+.course {
+  > .container {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      background: center / cover no-repeat url(/assets/images/deco/flower-2.png);
+      z-index: -3;
+      top: 0;
+      left: -112px;
+    }
+  }
+  .btn-outline-neutral40 {
+    --bs-btn-color: #4b4b4b;
+    --bs-btn-hover-bg: #0068ff;
+    --bs-btn-hover-color: #ffffff;
+  }
+  .card {
+    &-img-rounded {
+      height: 44px;
+      width: 44px;
+    }
+    &-img-top {
+      min-height: 272px;
+    }
+    // &-body {
+    //   min-height: 220px;
+    // }
+  }
+
+  .swiper {
+    &-pagination-bullet {
+      background: #ececec;
+      opacity: 1;
+    }
+    &-pagination-bullet-active {
+      width: 24px;
+      border-radius: 100px;
+      background: #0068ff;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    > .container {
+      &::before {
+        height: 560px;
+        width: 560px;
+        left: -412px;
+      }
+    }
+    &-text {
+      letter-spacing: 0.32px;
+    }
+    .swiper-wrapper {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+    .swiper-slide {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+}
+
+.recommend {
+  $link-hover-color: #ffffff;
+  background: linear-gradient(#f0f6ff, #ffffff);
+  > .container {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      background: url(/assets/images/deco/flower-1.png);
+      z-index: -1;
+      left: -12px;
+      top: 56px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 480px;
+      width: 480px;
+      background: url(/assets/images/deco/flower-3.png);
+      left: -240px;
+      top: 215px;
+    }
+    > .container {
+      &::before {
+        left: 32%;
+        top: 96px;
+      }
+    }
+  }
+}
+
+.topics {
+  &-bg {
+    background-clip: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+  }
+  &-card-text {
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+  }
+  @include media-breakpoint-up(lg) {
+    &-bg {
+      max-width: 86.25%;
+      border-radius: 80px;
+    }
+  }
+}
+
+.teacher {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: center/contain no-repeat url("/assets/images/deco/line-1.png");
+  > .container {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      background: url(/assets/images/deco/flower-1.png);
+      z-index: -1;
+      left: -12px;
+      top: 0px;
+    }
+  }
+  .card {
+    &-img-top {
+      transform: translate(24px, 56px);
+      max-height: 356px;
+      object-fit: cover;
+    }
+  }
+  .swiper {
+    &-pagination-bullet {
+      background: #ececec;
+      opacity: 1;
+    }
+    &-pagination-bullet-active {
+      width: 24px;
+      border-radius: 100px;
+      background: #0068ff;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    > .container {
+      &::before {
+        left: 35%;
+        top: 0;
+      }
+    }
+    .card {
+      &-img-top {
+        transform: translate(32px, 100px);
+        max-height: 400px;
+      }
+    }
+  }
+}
