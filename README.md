@@ -1,6 +1,7 @@
 # [課程學習網站](https://yu-20-10.github.io/week8_CourseWebsite/)
 
 使用Bootstrap搭配Swiper.js完成的RWD靜態切版網站
+### Demo: [https://yu-20-10.github.io/week8_CourseWebsite/](https://yu-20-10.github.io/week8_CourseWebsite/)
 
 # 技術架構
   - **前端**
